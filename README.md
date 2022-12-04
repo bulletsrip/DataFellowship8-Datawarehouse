@@ -21,4 +21,4 @@ ORDER BY date DESC
 ```
 
 ## Table View
->https://docs.google.com/spreadsheets/d/1nqCBz8tjRMjn6AYJBCqj-lPnNbwEDVETDj209yPlBi4/edit?usp=sharing
+>https://docs.google.com/spreadsheets/d/1zHlX035AbbjOnNS4JpRN0cKLpjjmih_vF_01pCh7VOo/edit?usp=sharing
