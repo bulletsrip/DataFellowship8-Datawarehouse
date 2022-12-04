@@ -7,7 +7,18 @@ derives the total transactions per date and country based on the channel groupin
 clean the data and bonus point if using repeated columns)
 
 ## Query
-check out on the repository
+```sql
+ SELECT 
+  channelGrouping as channel,
+  date,
+  ARRAY_AGG(
+    STRUCT(geoNetwork_country as country, totals_totalTransactionRevenue as transaction_amount)
+  ) as c,
+  SUM(totals_totalTransactionRevenue) as totalrevenue
+FROM `data-to-insights.ecommerce.rev_transactions`
+GROUP BY date, channelGrouping
+ORDER BY date DESC
+```
 
 ## Table View
 >https://docs.google.com/spreadsheets/d/1nqCBz8tjRMjn6AYJBCqj-lPnNbwEDVETDj209yPlBi4/edit?usp=sharing
